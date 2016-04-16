@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_color_start">#616161</color>
+    <color name="bg_color_end">#E0E0E0</color>
+
+    <color name="t_v_color_first">#90CFD8DC</color>
+    <color name="t_v_color_second">#50CFD8DC</color>
+
+    <color name="book_bg_start">#90A4AE</color>
+    <color name="book_bg_end">#B0BEC5</color>
+
+    <color name="book_item_color">#F5F5F5</color>
+    <color name="book_buttons_bg">#F5F5F5</color>
+    <color name="book_buttons_color">#616161</color>
+</resources>

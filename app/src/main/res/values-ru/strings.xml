@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Либби</string>
+    <string name="adventure_text_view_text">Приключения</string>
+    <string name="poems_text_view_text">Стихотворения</string>
+    <string name="detectives_text_view_text">Детекстивы</string>
+    <string name="horror_text_view_text">Ужасы</string>
+    <string name="fantasy_text_view_text">Фантастика</string>
+    <string name="sci_fi_text_view_text">Научная фантастика</string>
+    <string name="science_text_view_text">Наука</string>
+    <string name="classics_text_view_text">Классика</string>
+    <string name="no_data">Нет информации для отображения</string>
+    <string name="search_button_text">Поиск</string>
+    <string name="add_button_text">Добавить</string>
+    <string name="delete_button_text">Удалить</string>
+    <string name="ok_button_text">OK</string>
+    <string name="cancel_button_text">Отменить</string>
+    <string name="add_text_view_text">Добавте новую книгу, автора и год выпуска</string>
+    <string name="book_edit_text_text">Книга</string>
+    <string name="author_edit_text_text">Автор</string>
+    <string name="year_edit_text_text">Год</string>
+
+    <!-- ListViewAdapter messages-->
+    <string name="no_record_found">Не найдено информацию в базе данных</string>
+    <string name="add_new_book">Добавте новую книгу</string>
+    <string name="dialog_book">Книга</string>
+    <string name="dialog_year">Год</string>
+    <string name="dialog_author">Автор</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_OK">OK</string>
+    <string name="deleted">Удалено</string>
+    <string name="update_book">Обновите книгу</string>
+    <string name="updated">Обновленно</string>
+</resources>

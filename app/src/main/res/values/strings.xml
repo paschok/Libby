@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Libby</string>
+    <string name="adventure_text_view_text">Adventures</string>
+    <string name="poems_text_view_text">Poems</string>
+    <string name="detectives_text_view_text">Detectives</string>
+    <string name="horror_text_view_text">Horror</string>
+    <string name="fantasy_text_view_text">Fantasy</string>
+    <string name="sci_fi_text_view_text">Sci-fi</string>
+    <string name="science_text_view_text">Science</string>
+    <string name="classics_text_view_text">Classics</string>
+    <string name="no_data">No data to display</string>
+    <string name="search_button_text">Search</string>
+    <string name="add_button_text">Add</string>
+    <string name="delete_button_text">Delete</string>
+    <string name="ok_button_text">OK</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="add_text_view_text">Add new book, it\'s author and the year of publishing</string>
+    <string name="book_edit_text_text">Book</string>
+    <string name="author_edit_text_text">Author</string>
+    <string name="year_edit_text_text">Year</string>
+
+    <!-- ListViewAdapter messages-->
+    <string name="no_record_found">No record found in database</string>
+    <string name="add_new_book">Add a new book</string>
+    <string name="dialog_book">Book</string>
+    <string name="dialog_year">Year</string>
+    <string name="dialog_author">Author</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_OK">OK</string>
+    <string name="deleted">Deleted</string>
+    <string name="update_book">Update book</string>
+    <string name="updated">Updated</string>
+</resources>

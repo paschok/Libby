@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Libby</string>
+    <string name="adventure_text_view_text">Abenteuer</string>
+    <string name="poems_text_view_text">Gedichten</string>
+    <string name="detectives_text_view_text">Detektivroman</string>
+    <string name="horror_text_view_text">Entsetzen</string>
+    <string name="fantasy_text_view_text">Utopische Literatur</string>
+    <string name="sci_fi_text_view_text">Science-fiction</string>
+    <string name="science_text_view_text">Wissenschaft</string>
+    <string name="classics_text_view_text">Klassik</string>
+    <string name="no_data">Keine Information zu zeigen</string>
+    <string name="search_button_text">Suche</string>
+    <string name="add_button_text">Hinzusetzen</string>
+    <string name="delete_button_text">Tilgen</string>
+    <string name="ok_button_text">OK</string>
+    <string name="cancel_button_text">Canceln</string>
+    <string name="add_text_view_text">Hinzusetzen Sie das neue Buch, es Autor und Jahr</string>
+    <string name="book_edit_text_text">Buch</string>
+    <string name="author_edit_text_text">Autor</string>
+    <string name="year_edit_text_text">Jahr</string>
+
+    <!-- ListViewAdapter messages-->
+    <string name="no_record_found">Keine Information in Datenbank</string>
+    <string name="add_new_book">Hinzusetzen Sie das neue Buch</string>
+    <string name="dialog_book">Buch</string>
+    <string name="dialog_year">Jahr</string>
+    <string name="dialog_author">Autor</string>
+    <string name="dialog_cancel">Canceln</string>
+    <string name="dialog_OK">OK</string>
+    <string name="deleted">Tilgt</string>
+    <string name="update_book">Auffrischen Sie das Buch</string>
+    <string name="updated">Auffrischt</string>
+</resources>
