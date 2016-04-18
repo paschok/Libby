@@ -18,11 +18,7 @@ import java.util.List;
 import paulryan.libby.R;
 import paulryan.libby.books.Book;
 import paulryan.libby.books.PoemsActivity;
-import paulryan.libby.books.SciFiActivity;
-import paulryan.libby.books.ScienceActivity;
 import paulryan.libby.database.DatabaseHelperPoems;
-import paulryan.libby.database.DatabaseHelperSciFi;
-import paulryan.libby.database.DatabaseHelperScience;
 
 public class ListViewAdapterPoems extends ArrayAdapter<Book> {
 
@@ -58,7 +54,7 @@ public class ListViewAdapterPoems extends ArrayAdapter<Book> {
         holder.btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseHelperPoems.deleteFriend(getItem(position)); //delete in db
+                databaseHelperPoems.deleteBook(getItem(position)); //delete in db
                 Toast.makeText(activity, R.string.deleted, Toast.LENGTH_SHORT).show();
 
                 //reload the database to view
@@ -102,7 +98,7 @@ public class ListViewAdapterPoems extends ArrayAdapter<Book> {
                         Book book = new Book(bookBox.getText().toString(), authorBox.getText().toString(),
                                 yearBox.getText().toString());
                         book.setId(getItem(position).getId());
-                        databaseHelperPoems.updateFriend(book); //update to db
+                        databaseHelperPoems.updateBook(book); //update to db
                         Toast.makeText(activity, R.string.updated, Toast.LENGTH_SHORT).show();
 
                         //reload the database to view

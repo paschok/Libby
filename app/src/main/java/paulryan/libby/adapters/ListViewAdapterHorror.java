@@ -18,9 +18,7 @@ import android.widget.Toast;
 import java.util.List;
 import paulryan.libby.R;
 import paulryan.libby.books.Book;
-import paulryan.libby.books.DetectivesActivity;
 import paulryan.libby.books.HorrorActivity;
-import paulryan.libby.database.DatabaseHelperDetectives;
 import paulryan.libby.database.DatabaseHelperHorror;
 
 public class ListViewAdapterHorror extends ArrayAdapter<Book> {
@@ -57,7 +55,7 @@ public class ListViewAdapterHorror extends ArrayAdapter<Book> {
         holder.btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseHelperDetectives.deleteFriend(getItem(position)); //delete in db
+                databaseHelperDetectives.deleteBook(getItem(position)); //delete in db
                 Toast.makeText(activity, R.string.deleted, Toast.LENGTH_SHORT).show();
 
                 //reload the database to view
@@ -101,7 +99,7 @@ public class ListViewAdapterHorror extends ArrayAdapter<Book> {
                         Book book = new Book(bookBox.getText().toString(), authorBox.getText().toString(),
                                 yearBox.getText().toString());
                         book.setId(getItem(position).getId());
-                        databaseHelperDetectives.updateFriend(book); //update to db
+                        databaseHelperDetectives.updateBook(book); //update to db
                         Toast.makeText(activity, R.string.updated, Toast.LENGTH_SHORT).show();
 
                         //reload the database to view

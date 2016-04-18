@@ -10,7 +10,6 @@ public class Book {
     private String author;
     private String year;
 
-
     public String getYear() {
         return year;
     }

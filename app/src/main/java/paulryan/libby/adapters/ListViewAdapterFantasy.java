@@ -17,9 +17,7 @@ import android.widget.Toast;
 import java.util.List;
 import paulryan.libby.R;
 import paulryan.libby.books.Book;
-import paulryan.libby.books.DetectivesActivity;
 import paulryan.libby.books.FantasyActivity;
-import paulryan.libby.database.DatabaseHelperDetectives;
 import paulryan.libby.database.DatabaseHelperFantasy;
 
 public class ListViewAdapterFantasy extends ArrayAdapter<Book> {
@@ -56,7 +54,7 @@ public class ListViewAdapterFantasy extends ArrayAdapter<Book> {
         holder.btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseHelperFantasy.deleteFriend(getItem(position)); //delete in db
+                databaseHelperFantasy.deleteBook(getItem(position)); //delete in db
                 Toast.makeText(activity, R.string.deleted, Toast.LENGTH_SHORT).show();
 
                 //reload the database to view
@@ -100,7 +98,7 @@ public class ListViewAdapterFantasy extends ArrayAdapter<Book> {
                         Book book = new Book(bookBox.getText().toString(), authorBox.getText().toString(),
                                 yearBox.getText().toString());
                         book.setId(getItem(position).getId());
-                        databaseHelperFantasy.updateFriend(book); //update to db
+                        databaseHelperFantasy.updateBook(book); //update to db
                         Toast.makeText(activity, R.string.updated, Toast.LENGTH_SHORT).show();
 
                         //reload the database to view

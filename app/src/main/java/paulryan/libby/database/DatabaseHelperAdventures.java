@@ -45,7 +45,7 @@ public class DatabaseHelperAdventures extends SQLiteOpenHelper {
     }
 
     // Adding a new record (book) to table
-    public void addNewFriend(Book book) {
+    public void addNewBook(Book book) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -59,7 +59,7 @@ public class DatabaseHelperAdventures extends SQLiteOpenHelper {
     }
 
     // Getting All Friends in Table of Database
-    public List<Book> getAllFriends() {
+    public List<Book> getAllBooks() {
         List<Book> bookList = new ArrayList<>();
 
         // select query
@@ -86,7 +86,7 @@ public class DatabaseHelperAdventures extends SQLiteOpenHelper {
     }
 
     // Updating a record in database table
-    public int updateFriend(Book book) {
+    public int updateBook(Book book) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -99,14 +99,14 @@ public class DatabaseHelperAdventures extends SQLiteOpenHelper {
     }
 
     // Deleting a record in database table
-    public void deleteFriend(Book book) {
+    public void deleteBook(Book book) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_ADVENTURES, KEY_ID + " = ?", new String[]{String.valueOf(book.getId())});
         db.close();
     }
 
     // getting number of records in table
-    public int getContactsCount() {
+    public int getBookInfo() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor dataCount = db.rawQuery("select " + KEY_ID + " from " + TABLE_ADVENTURES, null);
 

@@ -54,7 +54,7 @@ public class ListViewAdapterClassics extends ArrayAdapter<Book> {
         holder.btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseHelper.deleteFriend(getItem(position)); //delete in db
+                databaseHelper.deleteBook(getItem(position)); //delete in db
                 Toast.makeText(activity, R.string.deleted, Toast.LENGTH_SHORT).show();
 
                 //reload the database to view
@@ -98,7 +98,7 @@ public class ListViewAdapterClassics extends ArrayAdapter<Book> {
                         Book book = new Book(bookBox.getText().toString(), authorBox.getText().toString(),
                                 yearBox.getText().toString());
                         book.setId(getItem(position).getId());
-                        databaseHelper.updateFriend(book); //update to db
+                        databaseHelper.updateBook(book); //update to db
                         Toast.makeText(activity, R.string.updated, Toast.LENGTH_SHORT).show();
 
                         //reload the database to view

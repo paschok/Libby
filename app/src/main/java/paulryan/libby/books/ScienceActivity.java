@@ -39,7 +39,7 @@ public class ScienceActivity extends AppCompatActivity {
     }
 
     public void reloadingDatabase() {
-        bookList = databaseHelper.getAllFriends();
+        bookList = databaseHelper.getAllBooks();
         if (bookList.size() == 0) {
             Toast.makeText(this, R.string.no_record_found, Toast.LENGTH_SHORT).show();
         }
@@ -47,7 +47,7 @@ public class ScienceActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
     }
 
-    private void addingNewFriendDialog() {
+    private void addingNewBookDialog() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(ScienceActivity.this);
         alertDialog.setTitle(R.string.add_new_book);
 
@@ -74,7 +74,7 @@ public class ScienceActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Book book = new Book(getText(nameBook), getText(authorBox), getText(yearBox));
-                databaseHelper.addNewFriend(book);
+                databaseHelper.addNewBook(book);
 
                 reloadingDatabase(); //reload the db to view
             }
@@ -92,6 +92,6 @@ public class ScienceActivity extends AppCompatActivity {
     }
 
     public void onAddButtonClicked(View view) {
-        addingNewFriendDialog();
+        addingNewBookDialog();
     }
 }
